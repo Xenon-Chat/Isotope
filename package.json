@@ -1,0 +1,38 @@
+{
+  "name": "isotope",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/nunjucks": "^3.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "bun-types": "^0.4.0",
+    "eslint": "^8.32.0",
+    "eslint-config-standard-with-typescript": "^32.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4"
+  },
+  "description": "Reference server implementation for Xenon Chat",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xenon-Chat/Isotope.git"
+  },
+  "author": "Wingy <git@wingysam.xyz>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Xenon-Chat/Isotope/issues"
+  },
+  "homepage": "https://github.com/Xenon-Chat/Isotope#readme",
+  "dependencies": {
+    "@kapsonfire/bun-bakery": "^0.4.4",
+    "bulma": "^0.9.4",
+    "nanoid": "^4.0.0",
+    "nunjucks": "^3.2.3"
+  },
+  "scripts": {
+    "dev": "nodemon --watch 'src/*' -e 'ts' --exec 'bun run src/index.ts'",
+    "lint": "eslint src/"
+  }
+}
